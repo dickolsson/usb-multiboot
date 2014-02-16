@@ -1,0 +1,10 @@
+multiboot usb
+=============
+
+The USB key needs to be formatted with a vfat partition:
+
+    sudo mkfs.vfat -n multiboot /dev/sdX1
+
+Then install grub2 on it. On a Fedora system it would be:
+
+    sudo grub2-install --force --no-floppy --boot-directory=/mnt/boot /dev/sdX

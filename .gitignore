@@ -1,0 +1,3 @@
+boot/grub2/*
+!boot/grub2/grub.cfg
+iso/*.iso
